@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+
+	<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom styles -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- Custom scripts -->
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div class="searchBar">
+		<input type="text" name="searchTerm" maxlength="45">
+		<button class="btn">Find images</button>
+	</div>
+
+	<div class="gallery container">
+		<div class="message">Enter a search term in the box above to find images</div>
+		<div class="row"></div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="image-modal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">x</button>
+	      	<h4 class="modal-title" id="image-title"></h4>
+	      </div>
+	      <div class="modal-body">
+	        <img src="" class="img-responsive img-rounded center-block" alt="">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>
