@@ -31,7 +31,7 @@ $(document).ready(function() {
     $(".gallery").on("click", ".thumb", function(event){
         var title = $(this).data('title');
         var src = $(this).find('img').prop('src');
-        src = src.substring(0, src.indexOf("?"));       // removes url parameters, including image size restriction
+        //src = src.substring(0, src.indexOf("?"));       // removes url parameters, including image size restriction
 
         $('.modal-title').html(title);
         $('.modal-body img').prop('src', src);
